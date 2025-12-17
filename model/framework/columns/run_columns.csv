@@ -1,1 +1,2 @@
 name,type,direction,description
+antimicrobial_proba,float,high,Probability of inhibiting or delaying the regrowth of non-growing Ecoli
