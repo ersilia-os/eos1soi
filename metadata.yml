@@ -2,35 +2,36 @@ Identifier: eos1soi
 Slug: non-growing-antimicrobial
 Status: In progress
 Title: Antimicrobial activity against non-growing bacteria
-Description: Persistant infections require treatment that can kill slow and non-growing
-  bacterial populations. The authors of this publication screen a library of approved
-  drugs and drug candidates (Prestwick Library and Specs Repurposing Library) and
-  identify 37 compounds that kill non-growing uropathogenic E.coli (UPEC). The active
-  compounds delay the growth of the bacteria at pH 7.4. They belong mostly to antibiotic
-  classes with a majority of fluoroquinolones. We have used this data to train a model
-  using LazyQSAR.
+Description: Persistant infections require treatment that can kill slow and 
+  non-growing bacterial populations. The authors of this publication screen a 
+  library of approved drugs and drug candidates (Prestwick Library and Specs 
+  Repurposing Library) and identify 37 compounds that kill non-growing 
+  uropathogenic E.coli (UPEC). The active compounds delay the growth of the 
+  bacteria at pH 7.4. They belong mostly to antibiotic classes with a majority 
+  of fluoroquinolones. We have used this data to train a model using LazyQSAR.
 Deployment:
-- Local
+  - Local
 Source: Local
 Source Type: Internal
 Task: Annotation
 Subtask: Activity prediction
 Input:
-- Compound
+  - Compound
 Input Dimension: 1
 Output:
-- Score
+  - Score
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: 'Probability of inhibiting non-growing E.coli'
+Interpretation: Probability of inhibiting non-growing E.coli
 Tag:
-- Antimicrobial activity
+  - Antimicrobial activity
 Biomedical Area:
-- Antimicrobial resistance
+  - Antimicrobial resistance
 Target Organism:
-- Escherichia coli
+  - Escherichia coli
 Publication Type: Peer reviewed
 Publication Year: 2025
 Publication: https://www.nature.com/articles/s44259-025-00097-0
 Source Code: https://github.com/ersilia-os/lazy-qsar
 License: GPL-3.0-or-later
+Incorporation Date: '2025-12-17'
