@@ -35,3 +35,6 @@ Publication: https://www.nature.com/articles/s44259-025-00097-0
 Source Code: https://github.com/ersilia-os/lazy-qsar
 License: GPL-3.0-or-later
 Incorporation Date: '2025-12-17'
+S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1soi.zip
+Model Size: 11.0
+Environment Size: 1916.0
