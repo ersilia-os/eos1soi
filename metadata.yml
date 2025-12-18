@@ -1,6 +1,6 @@
 Identifier: eos1soi
 Slug: non-growing-antimicrobial
-Status: In progress
+Status: Ready
 Title: Antimicrobial activity against non-growing bacteria
 Description: Persistant infections require treatment that can kill slow and 
   non-growing bacterial populations. The authors of this publication screen a 
@@ -35,6 +35,18 @@ Publication: https://www.nature.com/articles/s44259-025-00097-0
 Source Code: https://github.com/ersilia-os/lazy-qsar
 License: GPL-3.0-or-later
 Incorporation Date: '2025-12-17'
+Last Packaging Date: '2025-12-18'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1soi.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos1soi
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 11.0
 Environment Size: 1916.0
+Image Size: 1955.67
+Computational Performance 1: 32.52
+Computational Performance 2: 22.85
+Computational Performance 3: 27.41
+Computational Performance 4: 123.55
+Computational Performance 5: 558.0
