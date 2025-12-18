@@ -2,8 +2,7 @@
 
 Persistant infections require treatment that can kill slow and non-growing bacterial populations. The authors of this publication screen a library of approved drugs and drug candidates (Prestwick Library and Specs Repurposing Library) and identify 37 compounds that kill non-growing uropathogenic E.coli (UPEC). The active compounds delay the growth of the bacteria at pH 7.4. They belong mostly to antibiotic classes with a majority of fluoroquinolones. We have used this data to train a model using LazyQSAR.
 
-This model was incorporated on 2025-12-17.
-
+This model was incorporated on 2025-12-17.Last packaged on 2025-12-18.
 
 ## Information
 ### Identifiers
@@ -35,12 +34,19 @@ Below are the **Output Columns** of the model:
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `Internal`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos1soi](https://hub.docker.com/r/ersiliaos/eos1soi)
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1soi.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1soi.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `11`
 - **Environment Size (Mb):** `1916`
+- **Image Size (Mb):** `1955.67`
 
+**Computational Performance (seconds):**
+- 10 inputs: `32.52`
+- 100 inputs: `27.41`
+- 10000 inputs: `558`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
