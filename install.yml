@@ -1,4 +1,6 @@
 python: "3.12"
 commands:
     - ["pip", "lazyqsar[descriptors]", "2.2.2"]
+    - ["pip", "chemprop", "2.2.0"]
     - "lazyqsar-setup"
+    - ["pip", "rdkit", "2025.9.1"]
