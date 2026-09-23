@@ -36,16 +36,18 @@ Source Code: https://github.com/ersilia-os/lazy-qsar
 License: GPL-3.0-or-later
 Contributor: GemmaTuron
 Incorporation Date: '2025-12-17'
-Last Packaging Date: '2026-09-16'
+Last Packaging Date: '2026-09-23'
 Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1soi.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos1soi
-Docker Architecture: ARM64
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 11.0
 Environment Size: 6432.0
-Image Size: 6381.26
-Computational Performance 1: 43.28
-Computational Performance 2: 136.51
-Computational Performance 3: 38.45
-Computational Performance 4: 179.55
-Computational Performance 5: 780.74
+Image Size: 6502.26
+Computational Performance 1: 37.31
+Computational Performance 2: 27.69
+Computational Performance 3: 31.34
+Computational Performance 4: 145.21
+Computational Performance 5: 651.89
