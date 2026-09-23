@@ -42,7 +42,7 @@ S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1soi.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos1soi
 Docker Architecture: ARM64
 Model Size: 11.0
-Environment Size: 6486.0
+Environment Size: 6432.0
 Image Size: 6381.26
 Computational Performance 1: 43.28
 Computational Performance 2: 136.51
