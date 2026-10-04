@@ -1,6 +1,6 @@
 # Antimicrobial activity against non-growing bacteria
 
-Persistant infections require treatment that can kill slow and non-growing bacterial populations. The authors of this publication screen a library of approved drugs and drug candidates (Prestwick Library and Specs Repurposing Library) and identify 37 compounds that kill non-growing uropathogenic E.coli (UPEC). The active compounds delay the growth of the bacteria at pH 7.4. They belong mostly to antibiotic classes with a majority of fluoroquinolones. We have used this data to train a model using LazyQSAR.
+Identifies compounds able to kill uropathogenic Escherichia coli that has stopped dividing, a state in which most antibiotics lose their effect and which underlies recurrent infection. Kaldalu and colleagues screened 6,454 approved drugs and clinical candidates using dilution-regrowth assays that measure actual killing rather than growth inhibition, then extended testing to intracellular bacteria. The screen covers repurposing candidates rather than novel chemistry, so predictions are anchored to drug-like space already in clinical use.
 
 This model was incorporated on 2025-12-17.Last packaged on 2026-09-23.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-12-17.Last packaged on 2026-09-23.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of inhibiting non-growing E.coli
+- **Interpretation:** Probability that a compound kills non-growing uropathogenic Escherichia coli.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
