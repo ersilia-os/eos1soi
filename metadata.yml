@@ -5,10 +5,11 @@ Title: Antimicrobial activity against non-growing bacteria
 Description: Identifies compounds able to kill uropathogenic Escherichia coli that
   has stopped dividing, a state in which most antibiotics lose their effect and which
   underlies recurrent infection. Kaldalu and colleagues screened 6,454 approved drugs
-  and clinical candidates using dilution-regrowth assays that measure actual killing
-  rather than growth inhibition, then extended testing to intracellular bacteria.
-  The screen covers repurposing candidates rather than novel chemistry, so predictions
-  are anchored to drug-like space already in clinical use.
+  and clinical candidates in dilution-regrowth assays, which register killing and
+  delayed regrowth rather than growth inhibition. Ersilia trained a LazyQSAR classifier
+  on the 37 compounds active in diluted cation-adjusted Mueller-Hinton broth at pH
+  7.4; fluoroquinolones dominate them, so the active chemistry is narrow and anchored
+  to repurposing space.
 Deployment:
   - Local
 Source: Local
@@ -23,7 +24,7 @@ Output:
 Output Dimension: 1
 Output Consistency: Fixed
 Interpretation: Probability that a compound kills non-growing uropathogenic Escherichia
-  coli.
+  coli or delays its regrowth.
 Tag:
   - Antimicrobial activity
 Biomedical Area:
