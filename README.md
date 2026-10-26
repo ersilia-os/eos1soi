@@ -23,12 +23,12 @@ This model was incorporated on 2025-12-17.Last packaged on 2026-09-23.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability that a compound kills non-growing uropathogenic Escherichia coli or delays its regrowth.
+- **Interpretation:** Rank score of the predicted ability to kill non-growing uropathogenic Escherichia coli or delay its regrowth. Calibrated against the Ersilia reference library of 50K compounds so that 0.65 is better than 99% of them. Higher is better.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| antimicrobial_proba | float | high | Probability of inhibiting or delaying the regrowth of non-growing Ecoli |
+| nongrowing_antimicrobial_rank | float | high | Rank score of the compound's predicted ability to kill non-growing uropathogenic Escherichia coli or delay its regrowth. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65. |
 
 
 ### Source and Deployment
