@@ -1,2 +1,2 @@
 name,type,direction,description
-antimicrobial_proba,float,high,Probability of inhibiting or delaying the regrowth of non-growing Ecoli
+nongrowing_antimicrobial_rank,float,high,Rank score of the compound's predicted ability to kill non-growing uropathogenic Escherichia coli or delay its regrowth. Calibrated against 50K compounds from the Ersilia reference library so that a score of 0.65 is better than 99% of them. Recommended threshold: 0.65.

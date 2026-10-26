@@ -23,8 +23,9 @@ Output:
   - Score
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: Probability that a compound kills non-growing uropathogenic Escherichia
-  coli or delays its regrowth.
+Interpretation: Rank score of the predicted ability to kill non-growing uropathogenic
+  Escherichia coli or delay its regrowth. Calibrated against the Ersilia reference
+  library of 50K compounds so that 0.65 is better than 99% of them. Higher is better.
 Tag:
   - Antimicrobial activity
 Biomedical Area:

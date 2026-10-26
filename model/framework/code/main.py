@@ -1,35 +1,29 @@
-# imports
 import os
-import csv
 import sys
-from lazyqsar.qsar import LazyBinaryQSAR
+
+from ersilia_pack_utils.core import read_smiles, write_out
+from lazyqsar.api.classifier_predict import predict
 
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
 root = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.abspath(os.path.join(root, "..", "..", "checkpoints", "model"))
+checkpoints = os.path.abspath(os.path.join(root, "..", "..", "checkpoints"))
 
-with open(input_file, "r") as f:
-    reader = csv.reader(f)
-    next(reader)  # skip header
-    smiles_list = [r[0] for r in reader]
+MODELS = {
+    "nongrowing_antimicrobial_rank": "model",
+}
 
-def predict(smiles_list, model_path):
-    model = LazyBinaryQSAR.load(model_path)
-    y_hat = model.predict_proba(smiles_list=smiles_list)[:, 1]
-    return y_hat
+_, smiles_list = read_smiles(input_file)
 
+outputs, header = predict(
+    {name: os.path.join(checkpoints, folder) for name, folder in MODELS.items()},
+    smiles=smiles_list,
+    predict_type="rank",
+)
 
-outputs = predict(smiles_list, model_path)
+# Ersilia reports missing values as empty cells; csv.writer would otherwise
+# render an unparseable SMILES as the string "nan".
+outputs = [["" if v is None or v != v else v for v in row] for row in outputs]
 
-input_len = len(smiles_list)
-output_len = len(outputs)
-assert input_len == output_len
-
-# write output in a .csv file
-with open(output_file, "w") as f:
-    writer = csv.writer(f)
-    writer.writerow(["antimicrobial_proba"])
-    for o in outputs:
-        writer.writerow([o])
+write_out(outputs, header, output_file)
