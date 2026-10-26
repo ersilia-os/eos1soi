@@ -2,14 +2,14 @@ Identifier: eos1soi
 Slug: non-growing-antimicrobial
 Status: Ready
 Title: Antimicrobial activity against non-growing bacteria
-Description: Identifies compounds able to kill uropathogenic Escherichia coli that
-  has stopped dividing, a state in which most antibiotics lose their effect and which
-  underlies recurrent infection. Kaldalu and colleagues screened 6,454 approved drugs
-  and clinical candidates in dilution-regrowth assays, which register killing and
-  delayed regrowth rather than growth inhibition. Ersilia trained a LazyQSAR classifier
-  on the 37 compounds active in diluted cation-adjusted Mueller-Hinton broth at pH
-  7.4; fluoroquinolones dominate them, so the active chemistry is narrow and anchored
-  to repurposing space.
+Description: Identifies compounds able to kill uropathogenic Escherichia coli 
+  that has stopped dividing, a state in which most antibiotics lose their effect
+  and which underlies recurrent infection. Kaldalu and colleagues screened 6,454
+  approved drugs and clinical candidates in dilution-regrowth assays, which 
+  register killing and delayed regrowth rather than growth inhibition. Ersilia 
+  trained a LazyQSAR classifier on the 37 compounds active in diluted 
+  cation-adjusted Mueller-Hinton broth at pH 7.4; fluoroquinolones dominate 
+  them, so the active chemistry is narrow and anchored to repurposing space.
 Deployment:
   - Local
 Source: Local
@@ -23,9 +23,10 @@ Output:
   - Score
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: Rank score of the predicted ability to kill non-growing uropathogenic
-  Escherichia coli or delay its regrowth. Calibrated against the Ersilia reference
-  library of 50K compounds so that 0.65 is better than 99% of them. Higher is better.
+Interpretation: Rank score of the predicted ability to kill non-growing 
+  uropathogenic Escherichia coli or delay its regrowth. Calibrated against the 
+  Ersilia reference library of 50K compounds so that 0.65 is better than 99% of 
+  them. Higher is better.
 Tag:
   - Antimicrobial activity
 Biomedical Area:
