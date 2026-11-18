@@ -2,7 +2,8 @@
 
 Identifies compounds able to kill uropathogenic Escherichia coli that has stopped dividing, a state in which most antibiotics lose their effect and which underlies recurrent infection. Kaldalu and colleagues screened 6,454 approved drugs and clinical candidates in dilution-regrowth assays, which register killing and delayed regrowth rather than growth inhibition. Ersilia trained a LazyQSAR classifier on the 37 compounds active in diluted cation-adjusted Mueller-Hinton broth at pH 7.4; fluoroquinolones dominate them, so the active chemistry is narrow and anchored to repurposing space.
 
-This model was incorporated on 2025-12-17.Last packaged on 2026-10-26.
+This model was incorporated on 2025-12-17.
+Last packaged on 2026-10-26.
 
 ## Information
 ### Identifiers
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos1soi](https://hub.docker.com/r/ersiliaos/eos1soi)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1soi.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1soi.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos1soi_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos1soi_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `9`
