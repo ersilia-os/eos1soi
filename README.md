@@ -3,7 +3,7 @@
 Identifies compounds able to kill uropathogenic Escherichia coli that has stopped dividing, a state in which most antibiotics lose their effect and which underlies recurrent infection. Kaldalu and colleagues screened 6,454 approved drugs and clinical candidates in dilution-regrowth assays that register killing and delayed regrowth. Ersilia trained a LazyQSAR classifier on 5,584 of them, 37 active, with a five-fold out-of-fold AUROC of 0.97. Fluoroquinolones dominate the actives, so the active chemistry is narrow.
 
 This model was incorporated on 2025-12-17.
-Last packaged on 2026-10-26.
+Last packaged on 2026-11-23.
 
 ## Information
 ### Identifiers
@@ -43,12 +43,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `11`
 - **Environment Size (Mb):** `6954`
-- **Image Size (Mb):** `7537.65`
+- **Image Size (Mb):** `3283.97`
 
 **Computational Performance (seconds):**
-- 10 inputs: `36.33`
-- 100 inputs: `26.77`
-- 10000 inputs: `550.56`
+- 10 inputs: `33.55`
+- 100 inputs: `27.99`
+- 10000 inputs: `173.81`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
