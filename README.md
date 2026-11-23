@@ -1,6 +1,6 @@
 # Antimicrobial activity against non-growing bacteria
 
-Identifies compounds able to kill uropathogenic Escherichia coli that has stopped dividing, a state in which most antibiotics lose their effect and which underlies recurrent infection. Kaldalu and colleagues screened 6,454 approved drugs and clinical candidates in dilution-regrowth assays, which register killing and delayed regrowth rather than growth inhibition. Ersilia trained a LazyQSAR classifier on the 37 compounds active in diluted cation-adjusted Mueller-Hinton broth at pH 7.4; fluoroquinolones dominate them, so the active chemistry is narrow and anchored to repurposing space.
+Identifies compounds able to kill uropathogenic Escherichia coli that has stopped dividing, a state in which most antibiotics lose their effect and which underlies recurrent infection. Kaldalu and colleagues screened 6,454 approved drugs and clinical candidates in dilution-regrowth assays that register killing and delayed regrowth. Ersilia trained a LazyQSAR classifier on 5,584 of them, 37 active, with a five-fold out-of-fold AUROC of 0.97. Fluoroquinolones dominate the actives, so the active chemistry is narrow.
 
 This model was incorporated on 2025-12-17.
 Last packaged on 2026-10-26.
